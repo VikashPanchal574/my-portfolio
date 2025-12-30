@@ -48,7 +48,7 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <a href="/Vikash-Panchal-Resume.pdf">
+            <a href={`${import.meta.env.BASE_URL}Vikash-Panchal-Resume.pdf`} download>
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full hover-glow btn-primary animate-slide-in-left animate-delay-200"
