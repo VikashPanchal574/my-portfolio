@@ -16,7 +16,7 @@ export function Hero() {
     >
       {/* Background with gradient */}
       <div className="absolute inset-0 hero-gradient opacity-10" />
-      
+
       {/* Floating elements */}
       <div className="absolute top-20 left-20 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float opacity-20" />
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float opacity-20" style={{ animationDelay: "-1.5s" }} />
@@ -36,7 +36,7 @@ export function Hero() {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Vikash Panchal
           </h1>
-          
+
           <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-muted-foreground mb-6">
             Java Backend Developer
           </h2>
@@ -48,16 +48,22 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <a href={`${import.meta.env.BASE_URL}Vikash-Panchal-Resume.pdf`} download>
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full hover-glow btn-primary animate-slide-in-left animate-delay-200"
+            <a
+              href="https://vikashpanchal574.github.io/my-portfolio/Vikash-Panchal-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
             >
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
-            </Button>
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full hover-glow btn-primary"
+              >
+                Download Resume
+              </Button>
             </a>
-            
+
+
+
             <Button
               variant="outline"
               size="lg"
@@ -81,7 +87,7 @@ export function Hero() {
                 <Github className="h-6 w-6" />
               </a>
             </Button>
-            
+
             <Button
               variant="ghost"
               size="icon"
